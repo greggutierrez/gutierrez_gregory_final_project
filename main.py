@@ -74,7 +74,7 @@ opponent = pygame.Rect(10, screen_height/2 - 70, 10, 140)
 
 # Colors
 bg_color = pygame.Color('grey12')
-light_grey = (200,200,200)
+green = (0,128,0)
 
 # Speed of each piece of the game
 ball_speed_x = 7 * random.choice((1,-1))
@@ -112,10 +112,10 @@ while True:
 # Color of each object and how each is made
     # Visuals
     screen.fill(bg_color)
-    pygame.draw.rect(screen,light_grey, player)
-    pygame.draw.rect(screen,light_grey, opponent)
-    pygame.draw.ellipse(screen, light_grey, ball)
-    pygame.draw.aaline(screen, light_grey, (screen_width/2,0), (screen_width/2,screen_height))
+    pygame.draw.rect(screen,green, player)
+    pygame.draw.rect(screen,green, opponent)
+    pygame.draw.ellipse(screen, green, ball)
+    pygame.draw.aaline(screen, green, (screen_width/2,0), (screen_width/2,screen_height))
 
     # Updating the window
     pygame.display.flip()
